@@ -5,6 +5,7 @@ An isogram is a word that has no repeating letters, consecutive or non-consecuti
 */
 
 function isIsogram(str) {
+    
   let lowercase_str = str.toLowerCase();
   let split_str = lowercase_str.split("");
   let split_set = new Set();
