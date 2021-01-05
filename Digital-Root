@@ -11,10 +11,10 @@ function digital_root(value){
     }
 
     if (sum > 9){
-        digital_root(sum);
-    } 
-       
-    return sum;
+        return digital_root(sum);
+    } else if (sum <= 9){
+        return sum;
+    }
     
 }
 
