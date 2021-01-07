@@ -15,8 +15,16 @@ function findOutlier(integers){
 
     for (let i = 0; i < integers.length; i++){
         if (integers[i] % 2 == 0){
-            evenArray.push(integers[i])
+            evenArray.push(integers[i]);
+        } else {
+            oddArray.push(integers[i]);
         }
     }
 
+    if (oddArray.length > evenArray.length){
+        return evenArray[0];
+    }
+    else{
+        return oddArray[0];
+    }
   }
