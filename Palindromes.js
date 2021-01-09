@@ -6,17 +6,16 @@ A palindrome is a string that is spelled the same both forwards and backwards, u
 
 */
 
-function palindromes(word){
+function palindromes(word) {
+  splitWord = word.split("");
+  wordCopy = splitWord.slice().reverse();
 
-    splitWord = word.split("");
-    wordCopy = splitWord.slice().reverse();
-
-    for (let i = 0; i < splitWord.length; i++){
-        if (splitWord[i] !== wordCopy[i]){
-            return false;
-        } else {
-            continue;
-        }
+  for (let i = 0; i < splitWord.length; i++) {
+    if (splitWord[i] !== wordCopy[i]) {
+      return false;
+    } else {
+      continue;
     }
-    return true;
+  }
+  return true;
 }
